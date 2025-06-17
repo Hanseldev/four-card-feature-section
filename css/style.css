@@ -140,6 +140,11 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    article {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
     h1 {
         text-align: center;
     }
@@ -153,8 +158,8 @@ a {
     article {
         padding: 0 var(--PADDING);
         justify-items: flex-start;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 32px;
         
     }
@@ -188,7 +193,4 @@ a {
         align-self: center;
         margin-bottom: 0;
     }
-    
-
-
 }
